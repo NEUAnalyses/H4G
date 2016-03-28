@@ -10,4 +10,5 @@
 <use name="DataFormats/Candidate"/>
 <use name="DataFormats/Common"/>
 <use name="DataFormats/PatCandidates"/>
+<use name="H4G/H4GSelector"/>
 <flags EDM_PLUGIN="1"/>

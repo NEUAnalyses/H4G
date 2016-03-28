@@ -54,6 +54,10 @@
 #include "FWCore/ServiceRegistry/interface/Service.h"
 #include "CommonTools/UtilAlgos/interface/TFileService.h"
 
+#ifdef _CINT_
+#pragma link C++ class std::vector<std::map<std::string,float>>;
+#pragma link C++ class std::vector<std::map<std::string,int>>;
+#endif
 
 //
 // class declaration

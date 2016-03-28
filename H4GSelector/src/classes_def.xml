@@ -1,0 +1,4 @@
+<lcgdict>
+	<class name="std::vector<std::map<std::string,float>>"/>
+        <class name="std::vector<std::map<std::string,int>>"/>
+</lcgdict>

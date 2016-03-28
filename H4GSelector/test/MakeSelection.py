@@ -18,7 +18,7 @@ from Configuration.AlCa.GlobalTag import GlobalTag
 process.GlobalTag = GlobalTag(process.GlobalTag, 'auto:run2_mc', '')
 
 
-process.maxEvents = cms.untracked.PSet( input = cms.untracked.int32(-1) )
+process.maxEvents = cms.untracked.PSet( input = cms.untracked.int32(100) )
 
 inputFiles = cms.untracked.vstring(
     # MiniAOD test files from 
@@ -46,5 +46,5 @@ process.TFileService = cms.Service("TFileService",
                                    fileName = cms.string( "outputFile.root" )
                                    )
 
-process.load("H4G.H4GSelector.H4GSelector_cfi.py")
+process.load("H4G.H4GSelector.H4GSelector_cfi")
 process.p = cms.Path(process.egmPhotonIDSequence * process.h4gselector)
