@@ -1,0 +1,13 @@
+<use name="FWCore/Framework"/>
+<use name="FWCore/PluginManager"/>
+<use name="FWCore/ParameterSet"/>
+<use name="CommonTools/UtilAlgos"/>
+<use name="RecoEgamma/EgammaTools" />
+<use name="DataFormats/Math"/>
+<use name="DataFormats/HepMCCandidate"/>
+<use name="SimDataFormats/GeneratorProducts"/>
+<use name="DataFormats/EgammaCandidates"/>
+<use name="DataFormats/Candidate"/>
+<use name="DataFormats/Common"/>
+<use name="DataFormats/PatCandidates"/>
+<flags EDM_PLUGIN="1"/>
