@@ -275,6 +275,7 @@ H4GSelector::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup)
      vid::CutFlowResult fullCutFlowDataMedium = (*medium_id_cutflow_data)[pho];
      vid::CutFlowResult fullCutFlowDataTight = (*tight_id_cutflow_data)[pho];
 
+//     if(i == 0) std::cout << "Id vars:" << std::endl;
      std::map<std::string, float> varsMap;
      for( size_t cut = 0; cut < fullCutFlowDataLoose.cutFlowSize(); cut++) {
          std::string varName_Loose = fullCutFlowDataLoose.getNameAtIndex(cut);
@@ -291,6 +292,14 @@ H4GSelector::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup)
          varsMap[varName_Loose] = var_Loose;
          varsMap[varName_Medium] = var_Medium;
          varsMap[varName_Tight] = var_Tight; 
+
+/*        if(i == 0 ) {
+            std::cout << varName_Loose << std::endl;
+            std::cout << varName_Medium << std::endl;
+            std::cout << varName_Tight << std::endl;
+         }
+*/
+
      }
      v_phoIdvars.push_back(varsMap);
 
