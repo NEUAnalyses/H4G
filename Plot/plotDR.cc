@@ -3,7 +3,11 @@
 #include "TROOT.h"
 #include "TSystem.h"
 
-void plotDR(float mass_a = 0.100){
+void plotDR(float mass_a = 0.100, int NY = 1000, int NX = 100){
+ 
+ std::cout << " mass_a = " << mass_a << std::endl;
+ std::cout << " NY =     " << NY     << std::endl;
+ std::cout << " NX =     " << NX     << std::endl;
  
  gSystem->Load("libPhysics");
  
@@ -29,8 +33,6 @@ void plotDR(float mass_a = 0.100){
 
  TH1F* h_boost = new TH1F("h_boost","",100,0,100);
  
- int NX = 100;
- int NY = 1000;
  
  int point_number = 0;
  for (int ix = 0; ix < NX; ix++) {
