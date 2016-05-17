@@ -8,5 +8,13 @@ Cannot use POWHEG LHE because it produces h(125) - pdgid 25.
 
 #### CMS GEN Production
 ##### Step 0
-cmsDriver.py Configuration/GenProduction/python/Step0_GluGluToHToXXTo4G-fragment.py --fileout file:HIG-RunIISummer15GS-00174.root --mc --eventcontent RAWSIM --era Run2_25ns --datatier GEN-SIM --conditions 76X_mcRun2_asymptotic_v12 --pileup 2015_25ns_FallMC_matchData_PoissonOOTPU --step GEN,SIM --magField 38T_PostLS1 --python_filename HIG-RunIISummer15GS-00174_1_cfg.py --no_exec -n 32   
+
+    curl -s --insecure https://raw.githubusercontent.com/NEUAnalyses/H4G/master/Gen/GENSIM/Step0_GluGluToHToXXTo4G-fragment.py    --retry 2 --create-dirs -o Configuration/GenProduction/python/Step0_GluGluToHToXXTo4G-fragment.py 
+    
+    cmsDriver.py Configuration/GenProduction/python/Step0_GluGluToHToXXTo4G-fragment.py --fileout file:HIG-RunIISummer15GS-00174.root --mc --eventcontent RAWSIM --era Run2_25ns --datatier GEN-SIM --conditions 76X_mcRun2_asymptotic_v12 --pileup 2015_25ns_FallMC_matchData_PoissonOOTPU --step GEN,SIM --magField 38T_PostLS1 --python_filename HIG-RunIISummer15GS-00174_1_cfg.py --no_exec -n 32   
+
+    already prepared in folder: Gen/GENSIM/Configs
+    Different configurations
+    
 ##### Step 1
+
