@@ -72,14 +72,77 @@ process.generator = cms.EDFilter("Pythia8GeneratorFilter",
             'pythia8CUEP8M1Settings', 
             'processParameters'),
         processParameters = cms.vstring('HiggsSM:all = on', 
-            'Higgs:useBSM = on', 
-            '25:m0 = 0.1', 
-            '35:m0 = 125.09', 
-            'HiggsBSM:gg2H2  = on', 
-            '35:onMode = 0', 
-            '35:onIfAll = 25 25', 
-            '25:onMode = 0', 
-            '25:onIfAll = 22 22'),
+            'Higgs:useBSM = on',
+            'HiggsBSM:all = off',    # Switch off all BSM Higgs production
+            'HiggsBSM:gg2H2 = on',
+            '35:m0 = 125.',
+            #'35:mMin = 50.',
+
+            '35:addChannel 1 0.01 100 54 54', 
+            '35:onMode = off',
+            '35:onIfMatch = 54 54',
+
+            '54:isResonance = false',
+            '54:mWidth = 0',
+            '54:m0 = 0.1',
+            '54:onMode = off',
+            #'54:onIfAll = 22 22',
+            '54:onIfMatch = 22 22',
+            #'54:addChannel 1 1.00 101 22 22', 
+
+            #'35:onMode = off',
+            #'35:onIfMatch = 25 25',
+
+            #'25:isResonance = false',
+            #'25:mWidth = 0',
+            #'25:m0 = 0.1',
+            #'25:onMode = off',
+            #'25:onIfAll = 22 22',
+            ##'25:onIfMatch = 22 22',
+            
+
+
+                        #'Higgs:useBSM = on',
+                        #'HiggsBSM:all = off',    # Switch off all BSM Higgs production
+                        #'HiggsBSM:gg2H2 = on',
+                        #'35:m0 = 90',
+                        ##'35:mMin = 50.',
+
+                        #'35:addChannel 1 0.01 100 54 54', 
+                        #'35:onMode = off',
+                        #'35:onIfMatch = 54 54',
+
+                        #'54:isResonance = false',
+                        #'54:mWidth = 0',
+                        #'54:m0 = 0.25',
+                        #'54:onMode = off',
+                        #'54:onIfMatch = 13 -13',
+                        
+            #'Higgs:useBSM = on',     # Initialize and use the two-Higgs-doublet BSM states
+            #'HiggsBSM:all = off',    # Switch off all BSM Higgs production
+            #'HiggsBSM:gg2H2 = on',   # Switch on gg->H^0(H_2^0) scattering via loop contributions primarily from top. Code 1022. 
+            #'35:m0 = 90.0',         #  mass in GeV of H0 (PDG ID = 35)
+            #'36:m0 = 0.5',           #  mass in GeV of A0 (PDG ID = 36)
+            # decays of H0 (PDG ID = 35)
+            #'35:onMode = off',       # Turn off all H0 decay modes 
+            #'35:onIfMatch = 36 36',  # Allow H0 decays to A0: H0 ->A0A0
+            # decays of A0 (PDG ID = 36)
+            #'36:onMode = off',       # Turn off all A0 decay modes
+            #'36:onIfMatch = 13 -13', # Allow A0 decays to muons: A0 ->mu+mu-
+            # Useful debug printouts
+            'Init:showProcesses = on',        # Print a list of all processes that will be simulated, with their estimated cross section maxima
+            'Init:showChangedSettings = on',  # Print a list of the changed flag/mode/parameter/word setting
+            #'Init:showAllParticleData = on', # Print a list of all particle and decay data. Warning: this will be a long list
+
+            #'Higgs:useBSM = on', 
+            #'25:m0 = 0.1', 
+            #'35:m0 = 125.09', 
+            #'HiggsBSM:gg2H2  = on', 
+            #'35:onMode = 0', 
+            #'35:onIfAll = 25 25', 
+            #'25:onMode = 0', 
+            #'25:onIfAll = 22 22'
+            ),
         pythia8CUEP8M1Settings = cms.vstring('Tune:pp 14', 
             'Tune:ee 7', 
             'MultipartonInteractions:pT0Ref=2.4024', 
