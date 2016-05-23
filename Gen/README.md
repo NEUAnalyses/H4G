@@ -16,5 +16,12 @@ Cannot use POWHEG LHE because it produces h(125) - pdgid 25.
     already prepared in folder: Gen/GENSIM/Configs
     Different configurations
     
-##### Step 1
+##### Step 1, DR
 
+    already prepared in folder: Gen/GENSIM/Configs
+    Different configurations
+
+##### Step miniAOD    
+
+    already prepared in folder: Gen/GENSIM/Configs
+    Different configurations
