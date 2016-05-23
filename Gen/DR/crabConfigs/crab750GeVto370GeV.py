@@ -22,3 +22,5 @@ config.Data.outputDatasetTag = 'DR-RunIIFall15MiniAODv2-PU25nsData2015v1_76X_mcR
 
 #config.Site.storageSite = <site where the user has permission to write>
 config.Site.storageSite = "T2_CH_CERN"
+
+config.Data.inputDBS = 'phys03'
