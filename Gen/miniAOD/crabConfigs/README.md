@@ -14,3 +14,13 @@ Crab submission
     crab status ../../../crab_projects/crab_AOD_miniAOD_GluGluToXToAATo4G_mX_750GeV_mA_10GeV_13TeV_Pythia8/
     crab status ../../../crab_projects/crab_AOD_miniAOD_GluGluToXToAATo4G_mX_750GeV_mA_370GeV_13TeV_Pythia8/
     
+    crab status ../../../crab_projects/crab_AOD_miniAOD_GluGluToXToAATo4G_mX_750GeV_mA_10GeV_13TeV_Pythia8_bis/
+    crab status ../../../crab_projects/crab_AOD_miniAOD_GluGluToXToAATo4G_mX_750GeV_mA_370GeV_13TeV_Pythia8_bis/
+    
+    crab status ../../../crab_projects/crab_AOD_miniAOD_GluGluToXToAATo4G_mX_750GeV_mA_10GeV_13TeV_Pythia8_tris/
+    crab status ../../../crab_projects/crab_AOD_miniAOD_GluGluToXToAATo4G_mX_750GeV_mA_370GeV_13TeV_Pythia8_tris/
+
+    
+Local tests:
+
+    "/store/user/amassiro/H4G/GluGluToXToAATo4G_mX_750GeV_mA_10GeV_Pythia8/DR-RunIIFall15MiniAODv2-PU25nsData2015v1_76X_mcRun2_asymptotic_v12/160519_145441/0000/HIG-RunIIFall15DR76-00139_step1_1.root"
