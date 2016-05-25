@@ -28,15 +28,17 @@ Cannot use POWHEG LHE because it produces h(125) - pdgid 25.
 
 ##### Step MicroAOD
 
-    First, one should be familiar with the flashgg framework: https://github.com/cms-analysis/flashgg   
-    Specifically, for the MicroAOD generation, read https://github.com/cms-analysis/flashgg/tree/master/MetaData   
+First, one should be familiar with the flashgg framework: https://github.com/cms-analysis/flashgg   
+Specifically, for the MicroAOD generation, read https://github.com/cms-analysis/flashgg/tree/master/MetaData   
 ###### 1) Prepare json file with the datasets you want to run on (signals.json)   
 
 ```
 cd flashgg/MetaData/work/
 vim signals.json
 ```   
-    signals.json should look like this:   
+
+signals.json should look like this:   
+
 ```
 {
     "data" : [
@@ -52,8 +54,9 @@ vim signals.json
 ```
 ./prepareCrabJobs.py -C <Campaign>  -s signals.json --mkPilot
 ```    
-    Keep track of your campaign name, as it will be useful later on...   
-    This will create a directory <Campaign> with all your crab configuration files, the CMSSW parameter set, and the dump of all the script options.   
+
+Keep track of your campaign name, as it will be useful later on...   
+This will create a directory <Campaign> with all your crab configuration files, the CMSSW parameter set, and the dump of all the script options.   
 
 ###### 3) Submit all    
 ```
