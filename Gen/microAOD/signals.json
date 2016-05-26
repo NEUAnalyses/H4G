@@ -1,0 +1,9 @@
+{
+    "data" : [
+     ],
+    "sig"  : [  
+        "/GluGluToXToAATo4G_mX_750GeV_mA_370GeV_Pythia8/amassiro-AOD_miniAOD-RunIIFall15MiniAODv2-PU25nsData2015v1_76X_mcRun2_asymptotic_v12_tris-f4b2dfe8fd4637946dd0210f2ad467dd/USER",
+        "/GluGluToXToAATo4G_mX_750GeV_mA_10GeV_Pythia8/amassiro-AOD_miniAOD-RunIIFall15MiniAODv2-PU25nsData2015v1_76X_mcRun2_asymptotic_v12_tris-f4b2dfe8fd4637946dd0210f2ad467dd/USER"
+    ],
+    "bkg" : []
+}
