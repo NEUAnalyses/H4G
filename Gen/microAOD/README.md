@@ -45,6 +45,12 @@ Check crab:
 
     ls crab_* -d | xargs -n 1 crab status  
 
-    crab status crab_Moriond16WSFinal-GluGluToXToAATo4G_mX_750GeV_mA_370GeV_Pythia8_amassiro/
-    crab status crab_Moriond16WSFinal-GluGluToXToAATo4G_mX_750GeV_mA_10GeV_Pythia8_amassiro/
+    crab status crab_Moriond16WSFinal-38-g7db7446_GluGluToXToAATo4G_mX_750GeV_mA_10GeV_Pythia8_amassiro
+    crab status crab_Moriond16WSFinal-38-g7db7446_GluGluToXToAATo4G_mX_750GeV_mA_370GeV_Pythia8_amassiro
+    
+
+Try in local:
+
+    cmsRun microAODstd_X750_h370.py
+    cmsRun microAODstd_X750_h10.py
     
