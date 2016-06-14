@@ -10,4 +10,5 @@ Crab submission
     
     crab status ../../../crab_projects/crab_GENSIM_GluGluToXToAATo4G_mX_750GeV_mA_10GeV_13TeV_Pythia8/
     crab status ../../../crab_projects/crab_GENSIM_GluGluToXToAATo4G_mX_750GeV_mA_370GeV_13TeV_Pythia8/
-    
+
+    crab status ../../../crab_projects/crab_GENSIM_GluGluToXToAATo4G_mX_750GeV_mA_370GeV_13TeV_Pythia8_FIX/
