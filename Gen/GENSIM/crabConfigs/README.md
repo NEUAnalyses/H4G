@@ -51,7 +51,14 @@ Test generated sample at GEN:
         doLHE=False   \
         genJets=ak4GenJets
         
+     cmsRun gendumper_cfg.py   \
+        inputFiles=file:/tmp/amassiro/eos/cms/store/user/amassiro/H4G/GluGluToXToAATo4G_mX_750GeV_mA_370GeV_Pythia8_FIX_2/GENSIM-RunIIFall15MiniAODv2-PU25nsData2015v1_76X_mcRun2_asymptotic_v12_FIX/160616_034841/0000/HIG-RunIISummer15GS-00174_154.root  \
+        outputFile=/tmp/amassiro/test.new.root  \
+        isMiniAod=False  \
+        doLHE=False   \
+        genJets=ak4GenJets
         
 
         
-        
+    
+    
