@@ -16,3 +16,6 @@ Currently only storing photons (kinematics and ID variables)
 cd ${CMSSW_BASE}/src/H4G/H4GSelector/test/
 cmsRun MakeSelection.py
 ```
+
+
+    cmsRun MakeSelection.py  inputFiles=/store/user/amassiro/H4G/microAOD/myMicroAODOutputFile_GluGluToXToAATo4G_mX_750GeV_mA_370GeV_Pythia8.root
