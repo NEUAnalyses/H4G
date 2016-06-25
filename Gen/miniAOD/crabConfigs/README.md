@@ -31,3 +31,9 @@ Local tests:
 Inputs can be found here:
 
     https://cmsweb.cern.ch/das/request?view=list&limit=50&instance=prod%2Fphys03&input=dataset+dataset%3D%2FGluGluToXToAATo4G_mX_750GeV_mA_*GeV_Pythia8_FIX_2%2Famassiro*%2F*+status%3D*
+
+    
+Outputs on eos:
+
+    eos/cms/store/user/amassiro/H4G/GluGluToXToAATo4G_mX_750GeV_mA_10GeV_Pythia8_FIX_2/AOD_miniAOD-RunIIFall15MiniAODv2-PU25nsData2015v1_76X_mcRun2_asymptotic_v12_tris_FIX_2/160622_074438/0000/
+    
