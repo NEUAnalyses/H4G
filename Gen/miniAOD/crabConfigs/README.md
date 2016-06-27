@@ -36,4 +36,5 @@ Inputs can be found here:
 Outputs on eos:
 
     eos/cms/store/user/amassiro/H4G/GluGluToXToAATo4G_mX_750GeV_mA_10GeV_Pythia8_FIX_2/AOD_miniAOD-RunIIFall15MiniAODv2-PU25nsData2015v1_76X_mcRun2_asymptotic_v12_tris_FIX_2/160622_074438/0000/
+    eos/cms/store/user/amassiro/H4G/GluGluToXToAATo4G_mX_750GeV_mA_370GeV_Pythia8_FIX_2/AOD_miniAOD-RunIIFall15MiniAODv2-PU25nsData2015v1_76X_mcRun2_asymptotic_v12_tris_FIX_2/160622_075332/0000/
     
