@@ -63,12 +63,20 @@ To prepare the list of files:
     
     ls  --color=none  eos/cms/store/user/amassiro/H4G/GluGluToXToAATo4G_mX_750GeV_mA_370GeV_Pythia8_FIX_2/AOD_miniAOD-RunIIFall15MiniAODv2-PU25nsData2015v1_76X_mcRun2_asymptotic_v12_tris_FIX_2/160622_075332/0000/*.root  | awk '{print "@file:"$1"@,"}' | tr "@" "'" >tmp.txt
     ls  --color=none eos/cms/store/user/amassiro/H4G/GluGluToXToAATo4G_mX_750GeV_mA_10GeV_Pythia8_FIX_2/AOD_miniAOD-RunIIFall15MiniAODv2-PU25nsData2015v1_76X_mcRun2_asymptotic_v12_tris_FIX_2/160622_074438/0000/*.root | awk '{print "@file:"$1"@,"}' | tr "@" "'" >tmp.txt
+    ls  --color=none eos/cms/store/user/amassiro/H4G/GluGluToXToAATo4G_mX_750GeV_mA_370GeV_Pythia8_FIX_3/AOD_miniAOD-RunIIFall15MiniAODv2-PU25nsData2015v1_76X_mcRun2_asymptotic_v12_tris_FIX_3/160627_230328/0000/*.root | awk '{print "@file:"$1"@,"}' | tr "@" "'" >tmp.txt
+    
+    
+    
     
     
 And the output file then I move to eos:
 
     eos/cms/store/user/amassiro/H4G/microAOD/FIX_2/
     myMicroAODOutputFile_GluGluToXToAATo4G_mX_750GeV_mA_10GeV_Pythia8.root
+    myMicroAODOutputFile_GluGluToXToAATo4G_mX_750GeV_mA_370GeV_Pythia8.root  ---> actually it is 10 GeV
+
+    eos/cms/store/user/amassiro/H4G/microAOD/FIX_3/
     myMicroAODOutputFile_GluGluToXToAATo4G_mX_750GeV_mA_370GeV_Pythia8.root
 
+    
     
