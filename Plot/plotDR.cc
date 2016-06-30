@@ -2,14 +2,19 @@
 #include "TLorentzVector.h"
 #include "TROOT.h"
 #include "TSystem.h"
+#include "tdrstyle.C"
 
-void plotDR(float mass_a = 0.100, int NY = 1000, int NX = 100){
+void plotDR(float mass_a = 0.100, int NY = 1000, int NX = 100, float scaling = 1.){
  
  std::cout << " mass_a = " << mass_a << std::endl;
  std::cout << " NY =     " << NY     << std::endl;
  std::cout << " NX =     " << NX     << std::endl;
  
  gSystem->Load("libPhysics");
+
+
+ setTDRStyle();
+ 
  
 //  float mass_a = 0.100;  //---- GeV
  
@@ -39,8 +44,9 @@ void plotDR(float mass_a = 0.100, int NY = 1000, int NX = 100){
 //  for (int ix = 0; ix < 1; ix++) {
   double alpha = 1. * ix / NX * (3.14/2);
   for (int iy = 0; iy < NY; iy++) {
-   double boost = iy/10.; //---- 1./10. GeV
-//    double boost = iy/10. + 10; //---- 1./10. GeV
+   double boost = iy/10. * scaling; //---- 1./10. GeV * scaling
+//    double boost = iy/10.; //---- 1./10. GeV
+   //    double boost = iy/10. + 10; //---- 1./10. GeV
    //    double boost = iy/1.; //---- 1./1. GeV
    //    double boost = iy/0.01; //---- 1./10. GeV
    
